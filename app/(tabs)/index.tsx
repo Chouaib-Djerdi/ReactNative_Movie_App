@@ -1,21 +1,27 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import SearchBar from "@/components/SearchBar";
+import { icons } from "@/constants/icons";
+import { images } from "@/constants/images";
+import { useRouter } from "expo-router";
+import { Image, ScrollView, View } from "react-native";
 
 export default function Index() {
+  const router = useRouter();
   return (
-    <View className="flex-1 items-center justify-center">
-      <Text className="text-3xl font-bold text-dark-200">
-        Welcome to Nativewind!
-      </Text>
-      {/* <Link href="/onboarding">Onboarding</Link>
-      <Link
-        href={{
-          pathname: "/movie/[id]",
-          params: { id: "Avengers" },
-        }}
+    <View className="flex-1 bg-primary">
+      <Image source={images.bg} className="absolute w-full z-0" />
+      <ScrollView
+        className="flex-1 px-5"
+        showsVerticalScrollIndicator={false}
+        contentContainerStyle={{ minHeight: "100%", paddingBottom: 10 }}
       >
-        Movie Details
-      </Link> */}
+        <Image source={icons.logo} className="w-12 h-10 mt-20 mb-5 mx-auto" />
+        <View className="flex-1 mt-5">
+          <SearchBar
+            onPress={() => router.push("/search")}
+            placeholder="Search for a movie"
+          />
+        </View>
+      </ScrollView>
     </View>
   );
 }
