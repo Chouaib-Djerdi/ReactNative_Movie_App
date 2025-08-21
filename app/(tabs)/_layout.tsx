@@ -41,13 +41,14 @@ const _layout = () => {
           backgroundColor: "#0f0D23",
           borderRadius: 50,
           marginHorizontal: 20,
-          marginBottom: 24,
+          marginBottom: 12,
           height: 52,
           position: "absolute",
           overflow: "hidden",
           borderWidth: 0,
-          borderColor: "#0f0D23",
+          borderColor: "#0f0D23", 
         },
+        tabBarHideOnKeyboard: true,
       }}
     >
       <Tabs.Screen
