@@ -34,14 +34,14 @@ const _layout = () => {
         tabBarItemStyle: {
           width: "100%",
           height: "100%",
-          justifyContent: "center",
+          // justifyContent: "flex-start",
           alignItems: "center",
         },
         tabBarStyle: {
           backgroundColor: "#0F0D23",
           borderRadius: 50,
           marginHorizontal: 8,
-          marginBottom: 14,
+          marginBottom: 52,
           height: 52,
           position: "absolute",
           overflow: "hidden",
