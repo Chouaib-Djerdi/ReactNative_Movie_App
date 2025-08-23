@@ -1,3 +1,4 @@
+import { SessionProvider } from "@/context/SessionProvider";
 import * as NavigationBar from "expo-navigation-bar";
 import { Stack } from "expo-router";
 import { StatusBar } from "expo-status-bar";
@@ -11,11 +12,13 @@ export default function RootLayout() {
   }, []);
   return (
     <>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="movies/[id]" options={{ headerShown: false }} />
-      </Stack>
-      <StatusBar hidden style="light" />
+      <SessionProvider>
+        <Stack>
+          <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+          <Stack.Screen name="movies/[id]" options={{ headerShown: false }} />
+        </Stack>
+        <StatusBar hidden style="light" />
+      </SessionProvider>
     </>
   );
 }
