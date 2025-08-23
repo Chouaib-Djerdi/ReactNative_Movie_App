@@ -18,23 +18,14 @@ A mobile app built with **React Native** and **Appwrite** that lets users browse
 
 > _Preview of the app UI_
 
-1. **Home Screen**  
-   ![Home](./screenshots/1.png)  
-
-2. **Trending Home Screen**  
-   ![Search](./screenshots/2.png)  
-
-3. **Search Movies**  
-   ![Favorites](./screenshots/3.png)  
-
-4. **Movie Details Screen**  
-   ![Profile](./screenshots/4.png)  
-
-4. **Saved**  
-   ![Profile](./screenshots/5.png)  
-
-5. **Profile**  
-   ![Details](./screenshots/6.png)  
+<p align="center">
+  <img src="./screenshots/1.png" alt="Home Screen" width="250"/>
+  <img src="./screenshots/2.png" alt="Trending Home" width="250"/>
+  <img src="./screenshots/3.png" alt="Search Movies" width="250"/>
+  <img src="./screenshots/4.png" alt="Movie Details" width="250"/>
+  <img src="./screenshots/5.png" alt="Saved" width="250"/>
+  <img src="./screenshots/6.png" alt="Profile" width="250"/>
+</p>
 
 ---
 
