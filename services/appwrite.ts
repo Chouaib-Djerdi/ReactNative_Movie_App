@@ -36,7 +36,6 @@ export const updateSearchCount = async (query: string, movie: Movie) => {
       METRICS_COLLECTION_ID,
       [Query.equal("searchTerm", query)]
     );
-    console.log("Query result:", result);
 
     if (result.documents.length > 0) {
       const existingMovie = result.documents[0];
