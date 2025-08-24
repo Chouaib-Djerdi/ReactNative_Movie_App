@@ -33,8 +33,8 @@ A mobile app built with **React Native** and **Appwrite** that lets users browse
 
 - [React Native](https://reactnative.dev/) — cross-platform mobile framework  
 - [Expo](https://expo.dev/) — development & build tools  
-- [Appwrite](https://appwrite.io/) — authentication, database & storage  
-- [TMDb API](https://www.themoviedb.org/) — movie data (if used)  
+- [Appwrite](https://appwrite.io/) — sessions, database & storage  
+- [TMDb API](https://www.themoviedb.org/) — movie data  
 
 ---
 
@@ -44,7 +44,7 @@ A mobile app built with **React Native** and **Appwrite** that lets users browse
 
    ```bash
    git clone https://github.com/Chouaib-Djerdi/ReactNative_Movie_App
-   cd movieapp
+   cd ReactNative_Movie_App
    ```
 
 2. Install dependencies
